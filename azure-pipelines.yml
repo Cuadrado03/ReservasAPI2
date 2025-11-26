@@ -5,7 +5,8 @@ trigger:
     - main
 
 pool:
-    vmImage: "windows-latest"
+    name: "MiPoolSelfHosted"
+
 
 variables:
     buildConfiguration: "Release"

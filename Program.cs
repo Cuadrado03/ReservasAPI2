@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ReservasAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,5 +39,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapGet("/test-ci", () => "🚀 CI funcionando correctamente - versión 1.0");
 app.Run();
